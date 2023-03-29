@@ -15,3 +15,8 @@
    object-fit: cover;
    opacity: 0.4;
 }
+
+.hero-content {
+  inset: 0;
+  position: absolute;
+}
