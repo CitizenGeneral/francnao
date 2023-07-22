@@ -1,0 +1,444 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrancNao Group</title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            
+            & body {
+                font-family: 'Roboto', sans-serif;
+                background: linear-gradient(90deg, rgb(64 53 243) 0%, rgb(75 75 255) 35%, rgba(0,212,255,1) 100%);
+
+                & img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                & a {
+                    all: unset;
+                }
+            }
+        }
+
+        .header {
+            background-image: url(./Greenhouse-Farming-in-Nigeria6.jpg), url(./da2cd1ae610e6e4c1d898a7552b7bbf8_XL.jpg), url(./Shipping.jpg), url(./KelliAvilaPhoto-632.jpg);
+            background-repeat: no-repeat;
+            background-position: top right, bottom right, top left, bottom left;
+            background-size: 50% 50%, 50% 50%, 50% 50%, 50% 50%;
+
+            & .hmenu {
+                color: rgb(75 75 255);
+                background-color: #ffffff;
+                font-weight: 700;
+                display: grid;
+                z-index: 9999;
+                position: fixed;
+                cursor: default;
+                width: calc(100% - 6rem);
+                margin: 1.5rem 3rem;
+                border: 1px solid #ffffff;
+                border-radius: 2rem;
+                align-items: center;
+                justify-content: center;
+                padding: .5rem 2rem;
+                overflow: hidden;
+                box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+                
+                & .logo {
+                    font-size: 1.2rem;
+                    height: 6rem;
+                    width: 6rem;
+                    border: .2rem solid rgb(75 75 255);
+                    border-radius: 50%;
+                    background-color: #ffffff;
+                    position: fixed;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: rgb(8 8 53);
+                }
+            
+                & .menu {
+                    justify-self: right;
+                    display: flex;
+                    font-size: 1.2rem;
+
+                    & a {
+                        padding: .2rem 1rem;
+                        border-radius: 1rem;
+                        cursor: pointer;
+                    }
+
+                    & :hover {
+                        background-color: rgb(75 75 255);
+                        color: #ffffff;
+                    }
+
+                    & span:has(i) {
+                        background-color: transparent;
+                        color: #4b4bff;
+                        font-size: 1.3rem;
+                        display: none;
+
+                        &:last-child {
+                            color: inherit;
+                        }
+                    }
+
+                    & span {
+                        font-size: .8rem;
+                        background-color: red;
+                        color: #ffffff;
+                        padding: .15rem .4rem;
+                        border-radius: 2rem;
+                        margin-left: .1rem;
+                    }
+
+                    & .soon:hover {
+                        background-color: inherit;
+                        color: inherit;
+                        cursor: default;
+                    }
+                }
+            }
+
+            & .hero {
+                color: #ffffff;
+                font-size: 3rem;
+                font-weight: 700;
+                gap: 2rem;
+                padding: 7rem 3rem 5rem;
+                text-align: center;
+                overflow: hidden;
+                height: 80%;
+                text-shadow: -1px -1px 0 #4b4bff, 1px -1px 0 #4b4bff, -1px 1px 0 #4b4bff, 1px 1px 0 #4b4bff;
+            }
+        }
+
+        .main {
+            color: #ffffff;
+            font-weight: 500;
+
+            & .services {
+                scroll-margin: 4.5rem;
+
+                & .wedo {
+                    text-align: center;
+                    font-size: 2.5rem;
+                    padding-top: 1.5rem;
+                }
+
+            }
+
+            & .service {
+                display: flex;
+                flex-direction: column;
+                padding: 2rem;
+                gap: 2rem;
+                margin: 0 3rem;
+                color: rgb(75 75 255);
+
+                & :nth-child(even) {
+                    flex-direction: row-reverse;
+                }
+
+                & > div {
+                    display: flex;
+                    background-color: #ffffff;
+                    border-radius: 3rem;
+                    overflow: hidden;
+                    height: 20rem;
+                    box-shadow: 0px 8px 9px -5px rgba(0, 0, 0, 0.2), 0px 15px 22px 2px rgba(0, 0, 0, 0.14), 0px 6px 28px 5px rgba(0, 0, 0, 0.12);
+
+                    & .servinfo {
+                        font-size: 1.2rem;
+                        padding: 1.5rem;
+                        flex-basis: 40%;
+                        
+                        & .title {
+                            font-size: 2rem;
+                            font-weight: 700;
+                            margin-bottom: 1.5rem;
+                        }
+                    }
+
+                    & .serimg {
+                        flex-grow: 2;
+                    }
+                    
+                }
+            }
+            
+            & #aboutus {
+                display: flex;
+                padding: 2rem;
+                gap: 2rem;
+                border-top: 1px solid #ffffff;
+
+                & .aboutinfo {
+                    flex-basis: 50%;
+                    font-size: 1.2rem;
+
+                    & .title {
+                        font-size: 2rem;
+                        margin-bottom: 1rem;
+                    }
+                }
+
+                & .aboutimg {
+                    display: flex;
+                    align-items: center;
+
+                    & .img1, .img2 {
+                        border: .3rem solid #ffffff;
+                        border-radius: 1rem;
+                        overflow: hidden;
+                        width: 25rem;
+                        height: 20rem;
+                        box-shadow: 0px 8px 9px -5px rgba(0, 0, 0, 0.2), 0px 15px 22px 2px rgba(0, 0, 0, 0.14), 0px 6px 28px 5px rgba(0, 0, 0, 0.12);
+                    }
+
+                    & .img1 {
+                        margin-right: -8rem;
+                        width: 20rem;
+                        height: 17rem;
+                        z-index: 9;
+                    }
+                }
+            }
+
+            & #contactus {
+                display: flex;
+                align-items: center;
+                padding: 4rem 1rem;
+                border-top: 1px solid #ffffff;
+                font-size: 1.2rem;
+                gap: 1.2rem;
+
+                & i {
+                    font-size: 2rem;
+                }
+
+                & .connect {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: .5rem;
+                    flex: 1;
+                }
+
+                & .location {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    flex: 2;
+
+                    & > div > i {
+                        font-size: 3.5rem;
+                    }
+
+                    & .loc {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: .5rem;
+                        
+                        & :last-child {
+                            display: flex;
+                            align-items: center;
+                            gap: .5rem;
+                        }
+                    }
+                }
+
+                & .em, .mail {
+                    display: flex;
+                    flex-direction: column;
+                    gap: .5rem;
+                    flex: 1.3;
+                    align-items: center;
+                }
+            }
+
+
+        }
+
+        .footer-content {
+            background-color: #ffffff;
+            padding: 1rem;
+            text-align: center;
+            color: rgb(75 75 255);
+            display: flex;
+            flex-direction: column;
+            gap: .4rem;
+            justify-content: center;
+
+            & .copy-right {
+                font-weight: 600;
+            }
+
+            & .flogo {
+                font-size: 2rem;
+                font-weight: 900 ;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="header">
+        <div class="hmenu">
+            <div class="logo">
+                LOGO
+            </div>
+            <div class="menu">
+                <a href="#" class="menu-item"><span><i class="las la-home"></i></span>Home</a>
+                <a href="#services" class="menu-item"><span><i class="las la-border-all"></i></span>What We Do</a>
+                <a href="#aboutus" class="menu-item"><span><i class="las la-info"></i></span>About Us</a>
+                <a href="#contactus" class="menu-item"><span><i class="las la-phone"></i></span>Contact</a>
+                <a href="#shop" class="menu-item soon"><span><i class="las la-shopping-cart"></i></span>Shop<span>Soon</span></a>
+            </div>
+        </div>
+        <div class="hero">
+            <div class="herotext">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+        </div>
+    </section>
+    <section class="main">
+        <div class="services" id="services">
+            <div class="wedo">What We Do</div>
+            <div class="service">
+                <div class="grn">
+                    <div class="servinfo">
+                        <div class="title">
+                            Green House Farming
+                        </div>
+                        <div class="info">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium dolorem porro facilis natus ipsa commodi mollitia, eius sequi non delectus eos iusto animi dolor necessitatibus placeat cum aperiam excepturi laudantium!
+                        </div>
+                    </div>
+                    <div class="serimg">
+                        <img src="./Greenhouse_employees_Glass-House-Farms.jpg" alt="">
+                    </div>
+                </div>
+                <div class="const">
+                    <div class="servinfo">
+                        <div class="title">
+                            Building Construction 
+                        </div>
+                        <div class="info">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium dolorem porro facilis natus ipsa commodi mollitia, eius sequi non delectus eos iusto animi dolor necessitatibus placeat cum aperiam excepturi laudantium!
+                        </div>
+                    </div>
+                    <div class="serimg">
+                        <img src="./house-building-construction-contractor-500x500.webp" alt="">
+                    </div>
+                </div>
+                <div class="inex">
+                    <div class="servinfo">
+                        <div class="title">
+                            Import and Export
+                        </div>
+                        <div class="info">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium dolorem porro facilis natus ipsa commodi mollitia, eius sequi non delectus eos iusto animi dolor necessitatibus placeat cum aperiam excepturi laudantium!
+                        </div>
+                    </div>
+                    <div class="serimg">
+                        <img src="./Shipping.jpg" alt="">
+                    </div>
+                </div>
+                <div class="ren">
+                    <div class="servinfo">
+                        <div class="title">
+                            Event Rentals
+                        </div>
+                        <div class="info">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium dolorem porro facilis natus ipsa commodi mollitia, eius sequi non delectus eos iusto animi dolor necessitatibus placeat cum aperiam excepturi laudantium!
+                        </div>
+                    </div>
+                    <div class="serimg">
+                        <img src="./about-img.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="services" id="aboutus">
+            <div class="aboutinfo">
+                <div class="title">
+                    About Us:
+                </div>
+                <div class="about">
+                    <p>
+                        If you are looking for a party rental to help you celebrate your personal event, look no further. Francnao Rental is the place to be. Francnao Rental is a one-stop solution provider offering a wide range of services for including planning, rental and decorating at affordable prices. 
+                    </p>
+                    <br>
+                    <p>
+                        Francnao Rental is open Monday to Friday, 9:00 am – 5:00 pm. & Saturday by appointment. Call us anytime and we will be glad to assist you and answer your queries.
+                    </p>
+                </div>  
+            </div>
+            <div class="aboutimg">
+                <div class="img1">
+                    <img src="./Greenhouse_employees_Glass-House-Farms.jpg" alt="">
+                </div>
+                <div class="img2">
+                    <img src="./da2cd1ae610e6e4c1d898a7552b7bbf8_XL.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="services" id="contactus">
+            <div class="connect">
+                <p>CONNECT WITH US:</p>
+                <p class="social">
+                    <span class="facebook"><i class="lab la-facebook-square"></i></span>
+                    <span class="instagram"><i class="lab la-instagram"></i></span>
+                    <span class="whatsapp"><i class="lab la-whatsapp"></i></span>
+                </p>
+            </div>
+            <div class="location">
+                <div class="loc-icon"><i class="las la-map-marker-alt"></i></div>
+                <div class="loc">
+                    <p>Visit Us</p>
+                    <p>Afrancho, Off Kumasi-Techiman Road, Opposite Oboy filling Station</p>
+                    <p><span><i class="las la-map-marked"></i></span> AF-965-4568</p>
+                </div>
+            </div>
+            <div class="em">
+                <div class="tel">
+                    +233245789648
+                </div>
+                <div class="mail">
+                    <p>sales@francnaogroup.com</p>
+                    <p>info@francnaogroup.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="footer-content">
+            <div class="flogo">
+                LOGO
+            </div>
+            <div class="copy-right">
+                © 2023 Francnao Group. All rights reserved.
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>
